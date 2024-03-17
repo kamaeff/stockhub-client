@@ -2,10 +2,8 @@ import React, {useEffect, useState} from 'react';
 import './header.scss';
 import {UseTg} from '../../hooks/useTg';
 import {AnimatePresence, motion} from 'framer-motion';
-import {CircleUser, PackageOpen, ShoppingCart} from 'lucide-react';
+import {CircleUser, PackageOpen} from 'lucide-react';
 import Profile from './components/Profile';
-
-import basket from '../../assets/Frame.svg';
 
 const Header = () => {
   const {user, tg} = UseTg();

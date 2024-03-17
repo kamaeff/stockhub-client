@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+
 import {Header, Main} from './components';
 
 const App = () => {

@@ -21,6 +21,26 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+.stars {
+  width: 3px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform-origin: 0 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  animation: rotate 270s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+}
+
 .spinner {
   color: var(--text);
 }
