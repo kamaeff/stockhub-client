@@ -2,8 +2,10 @@ import React, {useEffect, useState} from 'react';
 import './header.scss';
 import {UseTg} from '../../hooks/useTg';
 import {AnimatePresence, motion} from 'framer-motion';
-import {CircleUser, Loader, ShoppingCart} from 'lucide-react';
+import {CircleUser, ShoppingCart} from 'lucide-react';
 import Profile from './components/Profile';
+
+import basket from '../../assets/Frame.svg';
 
 const Header = () => {
   const {user, tg} = UseTg();
@@ -28,8 +30,8 @@ const Header = () => {
         <button className='flex gap-2 items-center' onClick={openModal}>
           {/* {user?.first_name ? ( */}
           <>
-            <CircleUser size={32} />
-            <p className='font-medium italic text-lg'>Anton</p>
+            <CircleUser strokeWidth={1} size={32} />
+            <p className='italic text-lg'>Anton</p>
             <AnimatePresence>
               {isModalOpen && (
                 <motion.div
@@ -53,7 +55,8 @@ const Header = () => {
         </button>
 
         <div className='flex items-center gap-1'>
-          <ShoppingCart size={32} />
+          {/* <ShoppingCart size={32} /> */}
+          <img src={basket} width={34} height={34} alt='basket' />
           <span className='italic text-xl pt-6'>2</span>
         </div>
       </div>
