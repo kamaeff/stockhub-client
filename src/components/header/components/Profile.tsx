@@ -59,31 +59,27 @@ const Profile = ({closeModal}: ModalProps) => {
 
   return (
     <>
-      <a href='/' onClick={closeModal}>
-        <X
-          onClick={closeModal}
-          className='absolute top-0 right-0 mt-5 mr-5'
-          size={30}
-        />
-      </a>
+      <button type='button' onClick={closeModal}>
+        <X className='absolute top-0 right-0 mt-5 mr-5' size={30} />
+      </button>
 
       <div className='mt-16 ml-3 profile'>
         {userData ? (
-          <div className='mt-4 space-y-4'>
-            <div className='w-28 flex items-center space-x-2 profile__person'>
+          <div className='mt-2'>
+            <div className='flex items-center '>
               <CircleUser size={35} strokeWidth={1} />
-              <h2 className='text-xl font-medium'>
+              <h2 className='text-lg font-medium'>
                 {user?.first_name ? user.first_name : 'Anton'}
               </h2>
             </div>
 
             {Object.entries(userData).map(([key, value], index) => (
-              <div className='flex items-center space-x-2' key={index}>
-                <div className='flex items-center text-xl font-medium'>
+              <div className='flex items-center mt-2' key={index}>
+                <div className='flex items-center font-medium'>
                   <div className='me-2 profile__icon'>{iconMap[key]}</div>
-                  <span className='capitalize'>{key}:</span>
+                  <span>{key}:</span>
                 </div>
-                <span className='italic text-lg'>
+                <span className='ms-2 italic'>
                   {value === 'none' ? '🚫' : value}
                 </span>
               </div>
