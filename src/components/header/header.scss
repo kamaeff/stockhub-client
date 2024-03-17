@@ -1,4 +1,7 @@
 .header {
+  &__btn {
+    background-color: var(--bg);
+  }
   &__user {
     &--img {
       background: #fff;
