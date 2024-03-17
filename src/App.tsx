@@ -36,7 +36,6 @@ const App = () => {
 
     generateRandomCircles();
 
-    // Очистка кружков при размонтировании компонента
     return () => {
       const background = document.querySelector('.background');
       if (background) {
