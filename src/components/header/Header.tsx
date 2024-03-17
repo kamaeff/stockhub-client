@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './header.scss';
 import {UseTg} from '../../hooks/useTg';
 import {AnimatePresence, motion} from 'framer-motion';
-import {CircleUser, ShoppingCart} from 'lucide-react';
+import {CircleUser, PackageOpen, ShoppingCart} from 'lucide-react';
 import Profile from './components/Profile';
 
 import basket from '../../assets/Frame.svg';
@@ -54,15 +54,8 @@ const Header = () => {
           )} */}
         </button>
 
-        <div className='flex items-center gap-1'>
-          {/* <ShoppingCart size={32} /> */}
-          <img
-            className='fill-white'
-            src={basket}
-            width={34}
-            height={34}
-            alt='basket'
-          />
+        <div className='flex items-center'>
+          <PackageOpen size={32} strokeWidth={1} />
           <span className='italic text-xl pt-6'>2</span>
         </div>
       </div>

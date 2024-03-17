@@ -22,11 +22,11 @@ type ModalProps = {
 };
 
 const iconMap: Record<string, React.ReactElement> = {
-  locale: <MapPin size={32} />,
-  email: <Mail size={32} />,
-  fio: <BookCheck size={32} />,
-  bonus: <Coins size={32} />,
-  orders: <PackageOpen size={32} />,
+  locale: <MapPin size={32} strokeWidth={1} />,
+  email: <Mail size={32} strokeWidth={1} />,
+  fio: <BookCheck size={32} strokeWidth={1} />,
+  bonus: <Coins size={32} strokeWidth={1} />,
+  orders: <PackageOpen size={32} strokeWidth={1} />,
 };
 
 const Profile = ({closeModal}: ModalProps) => {
@@ -71,7 +71,7 @@ const Profile = ({closeModal}: ModalProps) => {
         {userData ? (
           <div className='mt-4 space-y-4'>
             <div className='w-28 flex items-center space-x-2 profile__person'>
-              <CircleUser size={35} />
+              <CircleUser size={35} strokeWidth={1} />
               <h2 className='text-xl font-medium'>
                 {user?.first_name ? user.first_name : 'Anton'}
               </h2>
