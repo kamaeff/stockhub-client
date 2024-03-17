@@ -56,7 +56,13 @@ const Header = () => {
 
         <div className='flex items-center gap-1'>
           {/* <ShoppingCart size={32} /> */}
-          <img src={basket} width={34} height={34} alt='basket' />
+          <img
+            className='fill-white'
+            src={basket}
+            width={34}
+            height={34}
+            alt='basket'
+          />
           <span className='italic text-xl pt-6'>2</span>
         </div>
       </div>
