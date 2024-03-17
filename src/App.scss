@@ -24,3 +24,15 @@ body {
 .spinner {
   color: var(--text);
 }
+
+.modal {
+  z-index: 9999;
+  overflow: hidden;
+  background: var(--bg--sec);
+  color: var(--text);
+
+  top: 105px;
+
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}

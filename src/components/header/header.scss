@@ -6,15 +6,3 @@
     }
   }
 }
-
-.modal {
-  z-index: 9999;
-  overflow: hidden;
-  background: var(--bg);
-  color: var(--text);
-
-  top: 105px;
-
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-}
