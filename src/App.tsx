@@ -4,7 +4,7 @@ import './App.scss';
 import {Header, Main} from './components';
 
 const App = () => {
-  const [numCircles, setNumCircles] = useState(20); // Используем useState для хранения числа кружков
+  const [numCircles, setNumCircles] = useState(30); // Используем useState для хранения числа кружков
 
   useEffect(() => {
     const generateRandomCircles = () => {
@@ -17,8 +17,8 @@ const App = () => {
           background.appendChild(circle);
 
           const size = Math.random() * 20;
-          const x = Math.random() * window.innerWidth; // Случайная позиция по X
-          const y = Math.random() * window.innerHeight; // Случайная позиция по Y
+          const x = Math.random() * window.innerWidth;
+          const y = Math.random() * window.innerHeight;
 
           circle.style.width = `${size}px`;
           circle.style.height = `${size}px`;
