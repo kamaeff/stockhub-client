@@ -77,7 +77,7 @@ const Profile = ({closeModal}: ModalProps) => {
               <div className='flex items-center mt-2' key={index}>
                 <div className='flex items-center font-medium'>
                   <div className='me-2 profile__icon'>{iconMap[key]}</div>
-                  <span>{key}:</span>
+                  <span className='capitalize'>{key}:</span>
                 </div>
                 <span className='ms-2 italic'>
                   {value === 'none' ? '🚫' : value}
